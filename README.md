@@ -26,8 +26,11 @@ Installation
 1. cp zbx_module_nginx.conf to /etc/zabbix, modify it (example)
 
 	NginxHost = 127.0.0.1
+
 	NginxPort = 80
+
 	NginxDomain = www.a.com
+
 	NginxStatusUri = nginx_status
 
 	*status check url: http://127.0.0.1/nginx_status -H 'host: www.a.com'*
@@ -43,13 +46,13 @@ Synopsis
     
 **key:** *nginx.status[ac|rd|wr|wa]*
 
-*ac     /* current number of active client connections */*
+*ac		-- current number of active client connections*
 
-*rd     /* current number of connections where nginx is reading the request header */*
+*rd		-- current number of connections where nginx is reading the request header*
 
-*wr     /* current number of connections where nginx is writing the response back to the client */*
+*wr		-- current number of connections where nginx is writing the response back to the client*
 
-*wa     /* current number of idle client connections waiting for a request */*
+*wa		-- current number of idle client connections waiting for a request*
 
 Note
 ===
