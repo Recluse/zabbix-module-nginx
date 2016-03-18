@@ -1,0 +1,19 @@
+This directory contains nginx module, which extends functionality of Zabbix Agent. 
+
+Run 'make' to build it. It should produce nginx.so.
+
+Using:
+
+1. copy nginx.so to the module directory, like LoadModulePath=/etc/zabbix/modules
+
+2. change config file add line : LoadModule=nginx.so
+
+3. cp zbx_module_nginx.conf to /etc/zabbix, modify it (example)
+	NginxHost = 127.0.0.1
+	NginxPort = 80
+	NginxDomain = www.a.com
+	NginxStatusUri = nginx_status
+
+4. restart zabbix_agent daemon
+    
+key: nginx.status[ac|rd|wr|wa]

@@ -6,7 +6,7 @@ This directory contains a sample module, which extends functionality of Zabbix A
 Status
 ======
 
-This module is testing.
+This module is testing and for zabbix 2.x.
 
 Installation
 ============
@@ -15,8 +15,6 @@ Installation
 
 	$ git clone https://github.com/cnshawncao/zabbix-module-nginx.git
 	$ cp -r zabbix-module-nginx/zabbix-2.x zabbix-2.x.x/src/modules/nginx	# zabbix-2.x.x is zabbix version
-	  or
-	$ cp -r zabbix-module-nginx/zabbix-3.x zabbix-3.x.x/src/modules/nginx	# zabbix-3.x.x is zabbix version
 ```
 
 1. run 'make' to build it. It should produce nginx.so.
